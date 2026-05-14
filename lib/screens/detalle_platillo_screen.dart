@@ -39,18 +39,21 @@ class DetallePlatilloScreen extends StatelessWidget {
                 height: 250,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Colors.orange[100],
-                  gradient: const LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [Colors.orange, Colors.deepOrange],
-                  ),
+                  image: platillo.imagen.isNotEmpty
+                      ? DecorationImage(
+                          image: NetworkImage(platillo.imagen),
+                          fit: BoxFit.cover,
+                        )
+                      : null,
+                  color: platillo.imagen.isEmpty ? Colors.orange[100] : null,
                 ),
-                child: const Icon(
-                  Icons.fastfood,
-                  size: 100,
-                  color: Colors.white,
-                ),
+                child: platillo.imagen.isEmpty
+                    ? const Icon(
+                        Icons.fastfood,
+                        size: 100,
+                        color: Colors.white,
+                      )
+                    : null,
               ),
             ),
             Padding(
