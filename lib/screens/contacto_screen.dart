@@ -43,13 +43,13 @@ class ContactoScreen extends StatelessWidget {
                       ListTile(
                         leading: const Icon(Icons.school, color: Colors.orange),
                         title: const Text('CETis 131'),
-                        subtitle: const Text('Plantel Naucalpan'),
+                        subtitle: const Text('Plantel Cetsi 131'),
                       ),
                       const Divider(),
                       ListTile(
                         leading: const Icon(Icons.location_on, color: Colors.orange),
                         title: const Text('Dirección'),
-                        subtitle: const Text('Av. Ejemplo #123, Col. Centro, Naucalpan'),
+                        subtitle: const Text('Calle Decima S/N, Granjas Economicas del Nte. 88730 Reynosa, Tamps.'),
                       ),
                       const Divider(),
                       ListTile(
