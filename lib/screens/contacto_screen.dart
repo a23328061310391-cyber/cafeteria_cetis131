@@ -43,7 +43,7 @@ class ContactoScreen extends StatelessWidget {
                       ListTile(
                         leading: const Icon(Icons.school, color: Colors.orange),
                         title: const Text('CETis 131'),
-                        subtitle: const Text('Plantel Cetsi 131'),
+                        subtitle: const Text('Plantel Cetis 131'),
                       ),
                       const Divider(),
                       ListTile(
